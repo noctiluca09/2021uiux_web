@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/*header*/
+#header {min-width: 980px;}
+.utilWrap {border-bottom: 1px solid #000;}
+.util{width: 980px;margin: 0 auto;}
+.uMenu {float: right;}
+.uMenu li {float: left; padding: 0 10px; position: relative;}
+.uMenu li:last-child {padding-right: 0;}
+.uMenu li:last-child:after {display: none;}
+.uMenu li a {display: block;line-height: 35px;font-size: 12px;}
+.uMenu li:after {content: ""; position: absolute; width:1px; height: 14px; background: #000;right: 0; top: 10px; }
+
+#header h1 {text-align: center;}
+
+/*gnb*/
+.gnbWrap {background: #1d5ba4;}
+.gnbMenu {width: 980px; margin: 0 auto;}
+.gnbMenu li {float: left; width: calc(100% / 6);border-left: 1px solid #fff;}
+.gnbMenu li:last-child{border-right: 1px solid #fff;}
+.gnbMenu a:hover {background: #76b0f4;}
+.gnbMenu a {display: block; line-height: 40px; text-align: center; color:white;}
+
+/*visual wrap*/
+
+.visualWrap {height: 400px; background: #223a6a  url(../images/main_bg01.jpg) no-repeat center;}
+.visual {}
