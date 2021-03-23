@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>himedia</title>
+	<style>
+		.box{
+			width: 400px; 
+			_height: 300px;
+			border: 1px solid #000;
+		}
+		.box1,
+		.box2 {
+			float: left;
+			width: 200px;
+			height: 400px;
+			opacity: 0.5;
+		}
+		.box1{background: #f00}
+		.box2{background: #0f0}
+		.box3{ width: 100px; height: 300px; background: #000;}
+		.clear { clear: both; }
+		.box4{background: skyblue;}
+		.box4:before {content: "HI! "}
+		.box4:after {content: "안녕"}
+		
+		.clearfix:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box clearfix">
+		<div class="box1">test1</div>
+		<div class="box2">test2</div>
+<!--		<div class="clear"></div>-->
+	</div>
+	<div class="box3"></div>
+	<div class="box4">dlwndk</div>
+</body>
+</html>

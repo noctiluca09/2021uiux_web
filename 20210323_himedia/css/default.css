@@ -186,11 +186,11 @@ charset "utf-8";
 .sub-content .sub-box img {position: absolute; right: 1px; bottom: 10px;}
 
 .cont-box1 { float: left; }
-.cont-box2 { float: left; padding-left: 25px;}
+.cont-box2 { float: left; padding-left: 22px;}
 .cont-box3 { float: right;}
 
 .cont-box4 { float: left;}
-.cont-box5 { float: left; padding-left: 25px;}
+.cont-box5 { float: left; padding-left: 22px;}
 .cont-box6 { float: right;}
 
 .cont-clear { clear: both; padding-bottom: 20px;}
