@@ -11,4 +11,14 @@ a:link, a:visited {
 	text-decoration: none;
 }
 li{list-style: none;}
+
 .clearfix:after {content: ""; display: block;clear: both;}
+
+
+
+/*common*/
+.mb5 {margin-bottom: 5px; !important;}
+.mb10 {margin-bottom: 10px; !important}
+.mb15 {margin-bottom: 15px; !important}
+.mb20 {margin-bottom: 20px; !important}
+.mb30 {margin-bottom: 30px; !important}

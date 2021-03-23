@@ -1,7 +1,8 @@
 @charset "utf-8";
 
+body {min-width: 980px;}
+
 /*header*/
-#header {min-width: 980px;}
 .utilWrap {border-bottom: 1px solid #000;}
 .util{width: 980px;margin: 0 auto;}
 .uMenu {float: right;}
@@ -23,5 +24,59 @@
 
 /*visual wrap*/
 
-.visualWrap {height: 400px; background: #223a6a  url(../images/main_bg01.jpg) no-repeat center;}
-.visual {}
+.visualWrap {height: 400px; background: #223a6a  url(../images/main_bg01.jpg) no-repeat center;overflow: hidden;}
+.visual {width: 980px;height: 400px;margin: 0 auto; position: relative;}
+.visual .vImg1,
+.visual .vImg2 {position: absolute;}
+
+.visual .vImg1 {right: 0;top: -16px;}
+.visual .vImg2 {left: 0;top: 76px;}
+
+/*section*/
+.section {background: #eee;}
+.banner {width: 980px;margin: 0 auto;}
+.banner li {float: left; width: calc(100% / 5);padding-top: 10px;}
+.banner li a {display: block;height: 196px;text-align: center;color: #fff;}
+
+
+.banner li:nth-child(1) {background:#7c99b9 }
+.banner li:nth-child(2) {background:#4f74a1 }
+.banner li:nth-child(3) {background:#4b8ce0 }
+.banner li:nth-child(4) {background:#3db5f3 }
+.banner li:nth-child(5) {background:#95c8ff }
+
+
+/*content 1st*/
+.contWrap1st {width: 980px;margin: 0 auto;}
+.contWrap1st li {float: left;
+	width: 310px;
+	margin-right: 25px;}
+
+.contWrap1st li:last-child {margin-right: 0;}
+.contWrap1st li .body {padding: 10px 20px 20px 20px ;border: 1px solid #ccc; border-top: 0 none;}
+.contWrap1st img {display: block;}
+
+/*content 2nd*/
+.contWrap2nd {width: 980px;margin: 0 auto;}
+
+.contWrap2nd li {float: left; width: 310px;border: 1px solid #ccc; padding: 20px 15px; margin-right: 25px;}
+.contWrap2nd li:first-child { background: url(../img/subcont-01.png) no-repeat 95%;}
+.contWrap2nd li:nth-child(2) { background: url(../img/subcont-02.png) no-repeat 99%;}
+.contWrap2nd li:last-child { background: url(../img/subcont-03.png) no-repeat 109% 90%; margin-right: 0;}
+
+.contWrap2nd li p {font-size: 12px; margin: 15px 0 0;}
+.contWrap2nd li p:last-of-type {color: dodgerblue;}
+
+/*footer*/
+.footer {background-color: #4d4d4d;}
+.f-contact {background-color: #5e5e5e;}
+
+#footer .textbox1,
+#footer .textbox2 {width: 980px; margin: 0 auto;font-size: 12px;}
+.footer li a, .textbox2 h2, .textbox2 p {color: #fff;}
+.t-box00 {float: left;}
+.t-box00 li {display: inline;}
+.top {float: right;}
+.textbox2 {padding:0 5px; padding-bottom: 5px;}
+.t-box01 {float: left;padding: 0;}
+.t-box02 {float: left;margin-left: 15px;}
