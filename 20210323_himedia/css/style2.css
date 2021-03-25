@@ -57,6 +57,7 @@ body {min-width: 980px;}
 .contWrap1st img {display: block;}
 
 /*content 2nd*/
+/*
 .contWrap2nd {width: 980px;margin: 0 auto;}
 
 .contWrap2nd li {float: left; width: 310px;border: 1px solid #ccc; padding: 20px 15px; margin-right: 25px;}
@@ -66,17 +67,54 @@ body {min-width: 980px;}
 
 .contWrap2nd li p {font-size: 12px; margin: 15px 0 0;}
 .contWrap2nd li p:last-of-type {color: dodgerblue;}
+*/
+.contWrap2nd {width: 980px;margin: 0 auto }
+.contWrap2nd li {
+	float: left;
+	width: 310px;
+	margin-right: 25px;
+	border: 1px solid #ccc; 
+	position: relative;
+	padding: 20px;
+	overflow: hidden;
+}
+.contWrap2nd li:last-child {margin-right: 0;}
+.contWrap2nd img {position: absolute;right: -50px;}
+.contWrap2nd .body {width: 150px;}
 
-/*footer*/
+/*
+footer
 .footer {background-color: #4d4d4d;}
-.f-contact {background-color: #5e5e5e;}
+.fContact {background-color: #5e5e5e;}
 
 #footer .textbox1,
 #footer .textbox2 {width: 980px; margin: 0 auto;font-size: 12px;}
+.footer .top {float: right;}
 .footer li a, .textbox2 h2, .textbox2 p {color: #fff;}
 .t-box00 {float: left;}
-.t-box00 li {display: inline;}
-.top {float: right;}
-.textbox2 {padding:0 5px; padding-bottom: 5px;}
+.t-box00 li {display: inline; padding: 13px; float: left;position: relative;}
+.t-box00 li:first-child {padding-left: 0;}
+.t-box00 li:after {content: ""; position: absolute; width:1px; height: 14px; background: #fff;right: 0; top: 15px;}
+
+.textbox2 {padding:15px 0 ;}
 .t-box01 {float: left;padding: 0;}
-.t-box02 {float: left;margin-left: 15px;}
+.t-box02 {float: left;margin-left: 20px;}*/
+
+/*footer*/
+
+
+#footer {background: #eee;}
+.footerTopWrap{background: #ccc;}
+.footerTop {width: 980px; margin: 0 auto;}
+.footerTop ul {overflow: hidden;float: left;}
+.footerTop li {float: left; position: relative;}
+.footerTop li a {display: block; padding: 0 20px; line-height: 40px;}
+.footerTop li:first-child a {padding-left:0;}
+.footerTop li:after {
+	content: ""; position: absolute; width: 1px; height: 15px; background: #000; 
+	right: -1px; top: 14px;
+}
+.footerBottom {width: 980px;margin: 0 auto;padding: 10px 0;}
+.footerBottom h3{float: left;margin-right: 10px;}
+.footerBottom .copy{float: left;}
+
