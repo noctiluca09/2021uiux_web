@@ -18,16 +18,16 @@
 	</script>
 	<style>
 		.wrap {background: skyblue;}
-		.gnb {width: 1200px;margin: 0 auto;height: 40px;}
+		.gnb {width: 1200px;margin: 0 auto;height: 40px;z-index: 10;position: relative;}
 		.gnb > ul > li {float: left; width: 20%; display: block; background: skyblue; }
 		.gnb > ul > li:hover {background:steelblue;} 
 		.gnb > ul > li:hover > a {color: #fff;}
 		.gnb > ul > li > a {display: block;text-align: center;line-height: 40px;}
 		
-		.gnb > ul:hover .submenu {display: block;}
-		.gnb .submenu {display: none;}
-		.gnb .submenu > li:hover {background: #7db4e2;}
-		.gnb .submenu > li {text-align: center;line-height: 40px;} 
+		.gnb > ul:hover .submenu {display: block;background: #7db4e2}
+		.gnb .submenu {display: none;position: absolute; }
+		.gnb .submenu > li:hover {background: #7db4e2;z-index: 20;}
+		.gnb .submenu > li {line-height: 40px;text-align: center;width: 240px;background: skyblue;} 
 		.visual {height: 400px;background-color:cornsilk;}
 		
 		.visual .slider {margin: 0 auto ;}
