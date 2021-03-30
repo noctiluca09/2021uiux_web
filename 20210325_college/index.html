@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HANGUK</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function() {
+			var mySlider = $(".slider").bxSlider({
+				auto: true,
+				pager: true,
+				controls: false,
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+		});
+
+	</script>
+	,
+</head>
+
+<body>
+	<div id="contentWrap">
+		<header id="header" class="clearfix">
+			<div class="topHead">
+				<div class="container clearfix">
+					<ul class="menuLeft">
+						<li><a href="#">대학교</a></li>
+						<li><a href="#">입학안내</a></li>
+						<li><a href="#">대학원</a></li>
+					</ul>
+					<ul class="menuRight">
+						<li><a href="#">글자크기</a></li>
+						<li><a href="#"><img src="images/minus.png" alt="-"></a></li>
+						<li><a href="#"><img src="images/plus.png" alt="+"></a></li>
+						<li><a href="#">찾아오시는길</a></li>
+						<li><a href="#">English</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</div>
+				<!-----clearfix-->
+			</div>
+			<!--topHead-->
+			<div class="downHead ">
+				<div class="container clearfix">
+					<div class="logo"><img src="images/logo.png" alt="logo"></div>
+					<div class="downRight">
+						<a href="#"><img src="images/friend.png" alt="friend"></a>
+						<a href="#"><img src="images/slide.png" alt="slide"></a>
+						<ul class="downMenu">
+							<li><a href="#">대학소개</a></li>
+							<li><a href="#">학과소개</a></li>
+							<li><a href="#">학사안내</a></li>
+							<li><a href="#">대학생활</a></li>
+							<li><a href="#">학생지원센터</a></li>
+						</ul>
+					</div>
+					<!--downRight-->
+				</div>
+				<!--container-->
+			</div>
+			<!--downHead-->
+		</header>
+		<section id="section" class="pt pb">
+			<div class="container clearfix pt pb">
+				<div class="textBig">
+					<h2>함께 나누며 세상을 이끌어</h2>
+					<h1>세계로향하는 한국대학교</h1>
+				</div>
+				<ul class="iconBox">
+					<li><a href="#">
+							<img src="images/icon01.png" alt="01">
+							<p>입학절차안내</p>
+						</a></li>
+					<li><a href="#">
+							<img src="images/icon02.png" alt="01">
+							<p>입학설명회</p>
+						</a></li>
+					<li><a href="#">
+							<img src="images/icon03.png" alt="01">
+							<p>장학제도</p>
+						</a></li>
+					<li><a href="#">
+							<img src="images/icon04.png" alt="01">
+							<p>증명서발급</p>
+						</a></li>
+
+				</ul>
+			</div>
+			<!--container-->
+			<div id="contentsWrap">
+				<div class="container">
+					<ul class="clearfix">
+						<li>
+							<ul class="slider"> <!--slider-->
+								<li>
+									<img src="images/level1-1.png" alt="">
+									<div class="textWrap">
+									<h2 class="pb"><span>한국</span>에서 <span>시작</span>하는 새로운 <span> 꿈</span></h2>
+									<a href="#" class="btn">자세히보기 ▶</a>
+									</div>
+								</li>
+								<li>
+									<img src="images/level1-1.png" alt="">
+									<div class="textWrap">
+									<h2 class="pb"><span>한국</span>에서 <span>시작</span>하는 새로운 <span> 꿈</span></h2>
+									<a href="#" class="btn">자세히보기 ▶</a>
+									</div>
+								</li>
+								<li>
+									<img src="images/level1-1.png" alt="">
+									<div class="textWrap">
+									<h2 class="pb"><span>한국</span>에서 <span>시작</span>하는 새로운 <span> 꿈</span></h2>
+									<a href="#" class="btn">자세히보기 ▶</a>
+									</div>
+								</li>
+								<li>
+									<img src="images/level1-1.png" alt="">
+									<div class="textWrap">
+									<h2 class="pb"><span>한국</span>에서 <span>시작</span>하는 새로운 <span> 꿈</span></h2>
+									<a href="#" class="btn">자세히보기 ▶</a>
+									</div>
+								</li>
+							</ul>
+							<div class="nextBtn">
+								<img src="images/arrow_left.png" alt="">
+							</div>
+							<div class="prevBtn">
+								<img src="images/arrow_left.png" alt="">
+							</div>
+						</li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+											
+			
