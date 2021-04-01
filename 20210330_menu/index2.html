@@ -1,98 +1,153 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
-	<title>menu</title>
-	<link rel="stylesheet" href="../css/reset.css">
-	<link rel="stylesheet" href="../css/jquery.bxslider.css">
-	<script src="../20210324_bxslider/js/jquery-3.1.1.min.js"></script>
-	<script src="../20210324_bxslider/js/jquery.bxslider.js"></script>
-	<script>
-		$(document).ready(function(){
-			$(".slider").bxSlider({
-				auto:true,
-				mode:'vertical',
-				pager:false,
-			});
-		});
-	</script>
-	<style>
-		.wrap {background: skyblue;}
-		.gnb {width: 1200px;margin: 0 auto;height: 40px;z-index: 10;position: relative;}
-		.gnb > ul > li {float: left; width: 20%; display: block; background: skyblue; }
-		.gnb > ul > li:hover {background:steelblue;} 
-		.gnb > ul > li:hover > a {color: #fff;}
-		.gnb > ul > li > a {display: block;text-align: center;line-height: 40px;}
-		
-		.gnb > ul:hover .submenu {display: block;background: #7db4e2}
-		.gnb .submenu {display: none;position: absolute; }
-		.gnb .submenu > li:hover {background: #7db4e2;z-index: 20;}
-		.gnb .submenu > li {line-height: 40px;text-align: center;width: 240px;background: skyblue;} 
-		.visual {height: 400px;background-color:cornsilk;}
-		
-		.visual .slider {margin: 0 auto ;}
-		.visual .slider img {width: 100%;}
-	</style>
+  <meta charset="UTF-8">
+  <title>menu</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/jquery.bxslider.css">
+  <script src="../20210324_bxslider/js/jquery-3.1.1.min.js"></script>
+  <script src="../20210324_bxslider/js/jquery.bxslider.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".slider").bxSlider({
+        auto: true,
+        mode: 'vertical',
+        pager: false,
+      });
+    });
+  </script>
+  <style>
+    .wrap {
+      background: skyblue;
+    }
+
+    .gnb {
+      width: 1200px;
+      margin: 0 auto;
+      height: 40px;
+      z-index: 10;
+      position: relative;
+    }
+
+    .gnb>ul>li {
+      float: left;
+      width: 20%;
+      display: block;
+      background: skyblue;
+    }
+
+    .gnb>ul>li:hover {
+      background: steelblue;
+    }
+
+    .gnb>ul>li:hover>a {
+      color: #fff;
+    }
+
+    .gnb>ul>li>a {
+      display: block;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .gnb>ul:hover .submenu {
+      display: block;
+      background: #7db4e2
+    }
+
+    .gnb .submenu {
+      display: none;
+      position: absolute;
+    }
+
+    .gnb .submenu>li:hover {
+      background: #7db4e2;
+      z-index: 20;
+    }
+
+    .gnb .submenu>li {
+      line-height: 40px;
+      text-align: center;
+      width: 240px;
+      background: skyblue;
+    }
+
+    .visual {
+      height: 400px;
+      background-color: cornsilk;
+    }
+
+    .visual .slider {
+      margin: 0 auto;
+    }
+
+    .visual .slider img {
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body>
-	<div class="wrap">
-		<nav class="gnb">
-			<ul class="clearfix">
-				<li><a href="#">MENU1</a>
-					<ul class="submenu">
-						<li><a href="#">smenu1_1</a></li>
-						<li><a href="#">smenu1_2</a></li>
-						<li><a href="#">smenu1_3</a></li>
-						<li><a href="#">smenu1_4</a></li>
-					</ul>
-				</li>
-				
-				<li><a href="#">MENU2</a>
-					<ul class="submenu">
-						<li><a href="#">smenu2_1</a></li>
-						<li><a href="#">smenu2_2</a></li>
-						<li><a href="#">smenu2_3</a></li>
-						<li><a href="#">smenu2_4</a></li>
-					</ul>
-				</li>
-			
-			
-				<li><a href="#">MENU3</a>
-					<ul class="submenu">
-						<li><a href="#">smenu3_1</a></li>
-						<li><a href="#">smenu3_2</a></li>
-						<li><a href="#">smenu3_3</a></li>
-						<li><a href="#">smenu3_4</a></li>
-					</ul>
-				</li>
-			
-			
-				<li><a href="#">MENU4</a>
-					<ul class="submenu">
-						<li><a href="#">smenu4_1</a></li>
-						<li><a href="#">smenu4_2</a></li>
-						<li><a href="#">smenu4_3</a></li>
-						<li><a href="#">smenu4_4</a></li>
-					</ul>
-				</li>
-				
-				<li><a href="#">MENU5</a>
-					<ul class="submenu">
-						<li><a href="#">smenu5_1</a></li>
-						<li><a href="#">smenu5_2</a></li>
-						<li><a href="#">smenu5_3</a></li>
-						<li><a href="#">smenu5_4</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		<div class="visual">
-			<ul class="slider">
-				<li><img src="../images/pc01.jpg" alt=""></li>
-				<li><img src="../images/pc02.jpg" alt=""></li>
-				<li><img src="../images/pc03.jpg" alt=""></li>
-			</ul>
-		</div>
-	</div>
+  <div class="wrap">
+    <nav class="gnb">
+      <ul class="clearfix">
+        <li><a href="#">MENU1</a>
+          <ul class="submenu">
+            <li><a href="#">smenu1_1</a></li>
+            <li><a href="#">smenu1_2</a></li>
+            <li><a href="#">smenu1_3</a></li>
+            <li><a href="#">smenu1_4</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">MENU2</a>
+          <ul class="submenu">
+            <li><a href="#">smenu2_1</a></li>
+            <li><a href="#">smenu2_2</a></li>
+            <li><a href="#">smenu2_3</a></li>
+            <li><a href="#">smenu2_4</a></li>
+          </ul>
+        </li>
+
+
+        <li><a href="#">MENU3</a>
+          <ul class="submenu">
+            <li><a href="#">smenu3_1</a></li>
+            <li><a href="#">smenu3_2</a></li>
+            <li><a href="#">smenu3_3</a></li>
+            <li><a href="#">smenu3_4</a></li>
+          </ul>
+        </li>
+
+
+        <li><a href="#">MENU4</a>
+          <ul class="submenu">
+            <li><a href="#">smenu4_1</a></li>
+            <li><a href="#">smenu4_2</a></li>
+            <li><a href="#">smenu4_3</a></li>
+            <li><a href="#">smenu4_4</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">MENU5</a>
+          <ul class="submenu">
+            <li><a href="#">smenu5_1</a></li>
+            <li><a href="#">smenu5_2</a></li>
+            <li><a href="#">smenu5_3</a></li>
+            <li><a href="#">smenu5_4</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="visual">
+      <ul class="slider">
+        <li><img src="../images/pc01.jpg" alt=""></li>
+        <li><img src="../images/pc02.jpg" alt=""></li>
+        <li><img src="../images/pc03.jpg" alt=""></li>
+      </ul>
+    </div>
+  </div>
 </body>
+
 </html>

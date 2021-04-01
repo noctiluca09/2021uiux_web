@@ -5,13 +5,13 @@
 	<title>slider</title>
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/reset.css">
-	<script src="js/jquery-3.1.1.min.js"></script>	
+	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
 			var mySlider = $(".slider").bxSlider({
 				auto:true,
-				pager:false,
+				// pager:false,
 				controls:false,
 				mode:'vertical'
 			});
@@ -22,7 +22,7 @@
 				mySlider.goToPrevSlide();
 			});
 		});
-		
+
 	</script>
 	<style>
 		.container {width: 1000px;margin: 0 auto; position:relative;}
@@ -38,9 +38,9 @@
 		.nextBtn,.prevBtn{position: absolute;top: 50%;transform: translateY(-50%);cursor: pointer;}
 		.nextBtn{right: 0;}
 		.prevBtn {left: 0;}
-		
+
 	</style>
-	
+
 </head>
 <body>
 	<div class="container">
