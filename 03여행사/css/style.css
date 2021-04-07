@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	background: url(../img/bg.png) no-repeat;
+}
+
+#header {
+	width: 100%;
+	background: #fff;
+}
+#header:after {content:""; background: #0D72A6;height: 5px; width: 100%; }
+/*----------------------hTop-----------------------*/
+#header .hTop {
+	background: url(../img/header.png);
+	padding: 10px 0;
+}
+
+#header .hTop .hTopWrap,
+#header .hNav .hNavWrap
+{
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header .hTop .hTopWrap .logo {
+	background: url(../img/logo.png) no-repeat;
+	text-indent: -9999px;
+	width: 130px;
+	display: block;
+	float: left;
+}
+
+#header .hTop .hTopWrap .field {
+	background: #fff;
+	border-radius: 207px;
+	width: 290px;
+	height: 30px;
+	float: left;
+	margin: 6px 110px 0 110px;
+	position: relative;
+}
+#header .hTop .hTopWrap .field h4 {position: absolute;left: 14px;top: 5px;}
+#header .hTop .hTopWrap .field input {
+	position: absolute;right: 40px;top: 7px;
+	border: 0 none;
+}
+#header .hTop .hTopWrap .field span {position: absolute;right: 15px;top: 4px;}
+
+#header .hTop .hTopWrap .tel {color: #fff; float: left;margin-top: 4px;}
+#header .hTop .hTopWrap .sns {float: right;margin-top: 9px;}
+/*----------------------hNav-----------------------*/
+
+#header .hNav {background: #fff;}
+#header .hNav ul li {float: left;width:calc(100%/6);text-align: center;padding: 20px;}
+#header .hNav ul li a {display: block;color: #000;font-size: 20px;font-weight: bold;}

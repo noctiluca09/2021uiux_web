@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>array</title>
+  <script>
+    const city01 = ["서울","대전","부산"];
+    const city02 = ["대구","광주","인천"];
+// array.forEach(function(){})
+//
+//function printArr(){}
+// array.forEach(printArr);
+
+  function printArr(item,index){
+    document.write("배열인덱스" + index + "데이터1" + city01 + " <br />")
+  }
+  city01.forEach(printArr)
+
+  city02.forEach(function(a,b){
+    document.write("배열인덱스" + b) + ",데이터2" city02 " <br />"
+  });
+  </script>
+</head>
+<body>
+
+</body>
+</html>

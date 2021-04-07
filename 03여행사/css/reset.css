@@ -1,0 +1,21 @@
+html,body
+{margin: 0; padding:0;}
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: ;
+	box-sizing: border-box;
+}
+.clearfix:after {content: ""; clear: both; display: block;}
+h3 {color: #fff;}
+
+.mb5 {margin-bottom: 5px;}
+.mb10 {margin-bottom: 10px;}
+.mb15 {margin-bottom: 15px;}
+.mb20 {margin-bottom: 20px;}
+.mb30 {margin-bottom: 30px;}
+
+.pt30 {padding-top: 30px;}
+.pb30 {padding-bottom: 30px;}
