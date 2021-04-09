@@ -13,14 +13,33 @@
 //function printArr(){}
 // array.forEach(printArr);
 
-  function printArr(item,index){
-    document.write("배열인덱스" + index + "데이터1" + city01 + " <br />")
-  }
-  city01.forEach(printArr)
+  // function printArr(item,index){
+  //   document.write("배열인덱스" + index + "데이터1" + city01 + " <br />")
+  // }
+  // city01.forEach(printArr)
+  //
+  // city02.forEach(function(a,b){
+  //   document.write("배열인덱스" + b + ",데이터2" + city02 + " <br />")
+  // };
+// ----------------------------------------------------------------------------
+const data1 = [
+  ["img1.jpg","이미지1","1,000"],
+  ["img2.jpg","이미지2","2,000"],
+  ["img3.jpg","이미지3","3,000"],
+  ["img4.jpg","이미지4","4,000"],
+  ["img5.jpg","이미지5","5,000"],
+  ["img6.jpg","이미지6","6,000"]
+]
 
-  city02.forEach(function(a,b){
-    document.write("배열인덱스" + b) + ",데이터2" city02 " <br />"
-  });
+function imgView1(){
+  for(let i=0;i<data1.length;i++){
+    document.write("<img src='../../images/" + data1[i][0] + "'>")
+    document.write("<p>" + data1[i][1] + "</p>")
+    document.write("<p>" + data1[i][2] + "원 </p>")
+}
+}
+imgView1();
+
   </script>
 </head>
 <body>

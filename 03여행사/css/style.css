@@ -56,3 +56,61 @@ body {
 #header .hNav {background: #fff;}
 #header .hNav ul li {float: left;width:calc(100%/6);text-align: center;padding: 20px;}
 #header .hNav ul li a {display: block;color: #000;font-size: 20px;font-weight: bold;}
+/*----------------------content-----------------------*/
+
+#container{width: 980px; margin: 0 auto;}
+#container .topCont {background:url(../img/titleBalloon.png) no-repeat 100% 100%;background-size: 70%}
+#container .topCont .tsWrap li,
+#container .subCont .scWrap li {width: 233px; height: 240px;}
+/*-------------------topCont--------------------*/
+
+#container .topCont .tsWrap {float: left;width: 482px;position: relative;}
+#container .topCont .tsWrap .topSlider {
+height: 301px;background: #fff;}
+
+#container .topCont .box li:nth-child(1){
+	float: left;}
+#container .topCont .box li:nth-child(2){
+	float: right;}
+#container .topCont .box li p {
+	display: block; 
+	color: #fff; 
+	background: #152630; 
+	width: 233px;
+	height: 50px;
+	line-height: 50px;
+	text-align: right;
+	padding-right: 15px;
+	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+}
+#container .topCont h1{float: left;margin-left: 40px;}
+
+/*-------------------subCont--------------------*/
+#container .subCont .scWrap li {background: rgb(2,7, 21); 
+	float: left;margin-right: 15px;}
+#container .subCont .scWrap li:nth-child(4),
+#container .subCont .scWrap li:nth-child(8) {margin-right: 0;}
+#container .subCont .scWrap li:nth-child(1),
+#container .subCont .scWrap li:nth-child(2),
+#container .subCont .scWrap li:nth-child(3),
+#container .subCont .scWrap li:nth-child(4){margin-bottom: 15px;}
+/*------------------------------------------------*/
+#container .subCont .box03 .slider01 li {position: relative;}
+#container .subCont .box03 .slider01 li p {display: block; 
+	color: #fff; 
+	background: #152630; 
+	width: 233px;
+	height: 65px;
+	padding: 15px;
+	line-height: 20px;
+	text-align: left;
+	font-size: 18px;
+	position: absolute;
+	bottom: 0;}
+#container .subCont .box03 .slider01 li a {display: block;}
+
+/*-------------------footer--------------------*/
+#footer {height: 90px;}
+#footer .fWrap {width: 980px;margin: 0 auto;}

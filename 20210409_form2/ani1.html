@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .box {width: 100px;height: 100px;
+  background: #f00;
+  animation-name: ani;
+  animation-duration: 1s;
+
+  animation-fill-mode: forwards; /* end */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes ani {
+  from {width: 200px;background: #f00;opacity: 0;}
+    t0 {width: 300px;background: #0f0;opacity: 1;}
+
+}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.boxWrap {
+  width: 600px;
+  height: 600px;
+  background: #eee;
+  position: relative;
+}
+.boxWrap .box01 {width: 0;height: 10px;background: #000;
+
+animation-duration:1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-fill-mode:forwards;
+animation-timing-function: ease-out;
+
+}
+.boxWrap .box02 {width: 10px;height: 0;
+background: #f00;position: absolute;right: 0;top: 0;
+
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+animation-timing-function: ease-in;
+}
+.boxWrap:hover .box01 {animation-name:box01 ;}
+.boxWrap:hover .box02 {animation-name: box02;}
+
+@keyframes box01 {
+  0% {width: 0;}
+  50% {background: orange;}
+  100% {width: 600px;}
+}
+@keyframes box02 {
+  from {height: 0;}
+    to {height: 600px;}
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+
+<div class="boxWrap">
+  <div class="box01"></div>
+  <div class="box02"></div>
+</div>
+</body>
+</html>

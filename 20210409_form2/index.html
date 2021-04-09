@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+  fieldset {border: 0 none;}
+  legend {display: block;position: absolute;left: 0;top: -99999px;}
+  .formWrap {width: 400px;margin: 0 auto;background: pink;}
+  .formWrap label { display: block; padding: 5px 0;}
+  .formWrap select {display: block;width: 100%;height: 40px;font-size: 1rem;text-indent: 8px;border-radius: 5px;}
+  .formWrap .left {margin-right: 10px;}
+  .formWrap .left,
+  .formWrap .right {float: left;width: 195px;}
+  .formWrap .left input,
+  .formWrap .right input {width: 100%;border-radius:5px;
+    border: 1px solid #000;height: 40px;text-indent: 8px;
+    font-size: 1.1rem;font-weight: bold;
+  }
+
+  </style>
+  <title>form</title>
+</head>
+<body>
+<div class="formWrap">
+  <form>
+    <fieldset>
+      <legend>여행일정</legend>
+    <ul>
+      <li><label for="golo">가고싶은 나라를 선택하세요.</label>
+        <select name="golo" id="golo">
+          <option value="">선택하세요</option>
+          <option value="미국">미국</option>
+          <option value="영국">영국</option>
+          <option value="일본">일본</option>
+          <option value="중국">중국</option>
+          <option value="호주">호주</option>
+        </select>
+      </li>
+      <li class="clearfix">
+        <div class="left">
+          <label for="sdate">출발일</label>
+          <input type="date" id="sdate" >
+        </div>
+        <div class="right">
+          <label for="sdate">도착일</label>
+          <input type="date" id="sdate" >
+        </div>
+      </li>
+      <li class="clearfix">
+        <div class="left">
+          <label for="sgrade">좌석등급</label>
+          <select name="sgrade" id="sgrade">
+            <option value="비지니스">비지니스</option>
+            <option value="이코노미">이코노미</option>
+          </select>
+        </div>
+        <div class="right">
+          <label for="num">인원</label>
+          <select name="num" id="num" value="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </li>
+    </ul>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>

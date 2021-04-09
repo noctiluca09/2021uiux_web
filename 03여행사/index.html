@@ -1,46 +1,156 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>travel</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/jquery.bxslider.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
- 
-  <script src="./js/jquery-3.1.1.min.js" charset="utf-8"></script>
-  <script src="./js/jquery.bxslider.js" charset="utf-8"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>travel</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="./js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script src="./js/jquery.bxslider.js" charset="utf-8"></script>
+	<script>
+		$(document).ready(function(){
+			var mySlider01 = $(".slider01").bxSlider({
+				auto:false,
+				pager:false,
+				controls:false
+			});
+			$(.nextBtn).click(function(){
+				mySlider01.goToNextSlide();
+			});
+			$(.prevBtn).click(function(){
+				mySlider01.goToNextSlide();
+			});
+		});
+	</script>
 </head>
+
 <body>
-<header id="header" class="clearfix">	
-  <div class="hTop clearfix">
-    <div class="hTopWrap">
-        <h1 class="logo"><a href="#">Travel 하이미디어</a></h1>
-		  <div class="field">
-		  	<h4>SEARCH</h4>
-		  	<input type="search" name="search" placeholder="검색어를 입력하세요" class="search">
-		  	<span class="icon pass"><i class="fas fa-search"></i></span>
-		  </div> <!--field-->
-        <div class="sns"><img src="./img/sns.png" alt=""></div>
-		<div class="tel">
-        	<h2><span>+82</span> 02 1234 5678</h2>
-        </div>
-  </div> <!--hTopWrap-->
-</div> <!--hTop-->
-  <div class="hNav clearfix">
-	  <div class="hNavWrap">
-	  	<ul>
-	  		<li><a href="#">여행도시</a></li>
-	  		<li><a href="#">호텔예약</a></li>
-	  		<li><a href="#">렌트카</a></li>
-	  		<li><a href="#">여행TIP</a></li>
-	  		<li><a href="#">회사소개</a></li>
-	  		<li><a href="#">커뮤니티</a></li>
-	  	</ul>
-	  </div>
-  </div>
-</header>
+	<header id="header" class="clearfix mb20">
+		<div class="hTop clearfix">
+			<div class="hTopWrap">
+				<h1 class="logo"><a href="#">Travel 하이미디어</a></h1>
+				<div class="field">
+					<h4>SEARCH</h4>
+					<input type="search" name="search" placeholder="검색어를 입력하세요" class="search">
+					<span class="icon pass"><i class="fas fa-search"></i></span>
+				</div>
+				<!--field-->
+				<div class="sns"><img src="./img/sns.png" alt=""></div>
+				<div class="tel">
+					<h2><span>+82</span> 02 1234 5678</h2>
+				</div>
+			</div>
+			<!--hTopWrap-->
+		</div>
+		<!--hTop-->
+		<div class="hNav clearfix">
+			<nav class="hNavWrap">
+				<ul>
+					<li><a href="#">여행도시</a></li>
+					<li><a href="#">호텔예약</a></li>
+					<li><a href="#">렌트카</a></li>
+					<li><a href="#">여행TIP</a></li>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">커뮤니티</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="container">
+		<!--980-->
+		<article class="topCont clearfix mb15">
+			<!--50% 50%-->
+			<div class="tsWrap">
+				<nav class="topSlider mb15">
+					<p>슬라이더 메뉴</p>
+				</nav>
+				<ul class="box">
+					<li class="box01">
+						<a href="#">
+							<img src="img/article_france.png" alt="">
+							<p>프랑스<span style="color: #69B960; margin-left: 15px; margin-right:15px;">￦1,900,000~ </span>></p>
+						</a>
+					</li>
+					<li class="box02">
+						<a href="#">
+						<img src="img/article_japan.png" alt="">
+						<p>일본<span style="color: #69B960; margin-left: 45px; margin-right:15px;">￦890,000~</span>></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+				<h1><img src="./img/title.png" alt=""></h1>
+		</article>
+		<article class="subCont clearfix mb15">			<!--1/8-->
+			<ul class="scWrap">
+				<li class="box03"> <!--내용 구성 블록-->
+				<ul class="slider01">
+					<li> <!--슬라이더 내용물-->
+						<a href="#">
+						<img src="img/article_hotel.png" alt="">
+						<p>HILLTON HOTEL (PARIS)
+						<img src="img/star.png" alt=""></p>
+						</a>
+					</li>
+				</ul>
+				<div class="nextBtn"></div>
+				<div class="prevBtn"></div>
+				</li>
+
+				<li class="box04">
+				<a href="#">
+				<p>내용</p>
+				</a>
+				</li>
+				<li class="box05">
+				<a href="#">
+				<p>내용</p>
+				</a>
+				</li>
+				<li class="box06">
+				<a href="#">
+				<p>내용</p>
+				</a>
+				</li>
+				<li class="box07">
+				<a href="#">
+				<p>내용</p>
+				</a>
+				</li>
+				<li class="box08">
+				<a href="#">
+				<p>내용</p>
+				</a>
+				</li>
+				<li class="box09">
+				<a href="#">
+				<p>내용</p>
+				</a>
+				</li>
+				<li class="box10">
+				<a href="#">
+				<p>내용</p>
+				</a>
+				</li>
+
+			</ul>
+		</article>
+	</section>
+<footer id="footer">
+	<div class="fWrap">
+		<ul>
+			<li><a href="#">회사규약</a></li>
+		</ul>
+		<p>
+			aaa <br>
+			legal
+		</p>
+	</div>
+</footer>
