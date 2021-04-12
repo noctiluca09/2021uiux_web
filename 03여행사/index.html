@@ -15,19 +15,7 @@
 	<script src="./js/jquery-3.1.1.min.js" charset="utf-8"></script>
 	<script src="./js/jquery.bxslider.js" charset="utf-8"></script>
 	<script>
-		$(document).ready(function(){
-			var mySlider01 = $(".slider01").bxSlider({
-				auto:false,
-				pager:false,
-				controls:false
-			});
-			$(.nextBtn).click(function(){
-				mySlider01.goToNextSlide();
-			});
-			$(.prevBtn).click(function(){
-				mySlider01.goToNextSlide();
-			});
-		});
+		
 	</script>
 </head>
 
@@ -35,14 +23,21 @@
 	<header id="header" class="clearfix mb20">
 		<div class="hTop clearfix">
 			<div class="hTopWrap">
-				<h1 class="logo"><a href="#">Travel 하이미디어</a></h1>
+				<a href="#"><h1 class="logo">Travel 하이미디어</h1></a>
 				<div class="field">
-					<h4>SEARCH</h4>
-					<input type="search" name="search" placeholder="검색어를 입력하세요" class="search">
-					<span class="icon pass"><i class="fas fa-search"></i></span>
+					<form action="#">
+						<label for="search"><h4>SEARCH</h4></label>
+						<input type="search" name="search" placeholder="검색어를 입력하세요" id="search" class="inp-search">
+						<input type="submit" value="button" class="btn-search">
+					</form>
 				</div>
 				<!--field-->
-				<div class="sns"><img src="./img/sns.png" alt=""></div>
+				<ul class="sns">
+				<li><a href="#"><img src="img/sns-in.png" alt=""></a></li>
+				<li><a href="#"><img src="img/sns-b.png" alt=""></a></li>
+				<li><a href="#"><img src="img/sns-tw.png" alt=""></a></li>
+				<li><a href="#"><img src="img/sns-fa.png" alt=""></a></li>
+				</ul>
 				<div class="tel">
 					<h2><span>+82</span> 02 1234 5678</h2>
 				</div>
@@ -53,12 +48,12 @@
 		<div class="hNav clearfix">
 			<nav class="hNavWrap">
 				<ul>
-					<li><a href="#">여행도시</a></li>
-					<li><a href="#">호텔예약</a></li>
-					<li><a href="#">렌트카</a></li>
-					<li><a href="#">여행TIP</a></li>
-					<li><a href="#">회사소개</a></li>
-					<li><a href="#">커뮤니티</a></li>
+					<li><a href="#">여행도시</a><div class="bar"></div></li>
+					<li><a href="#">호텔예약</a><div class="bar"></div></li>
+					<li><a href="#">렌트카</a><div class="bar"></div></li>
+					<li><a href="#">여행TIP</a><div class="bar"></div></li>
+					<li><a href="#">회사소개</a><div class="bar"></div></li>
+					<li><a href="#">커뮤니티</a><div class="bar"></div></li>
 				</ul>
 			</nav>
 		</div>
@@ -68,9 +63,70 @@
 		<article class="topCont clearfix mb15">
 			<!--50% 50%-->
 			<div class="tsWrap">
-				<nav class="topSlider mb15">
-					<p>슬라이더 메뉴</p>
-				</nav>
+				<form action="get" class="mb15">
+					<fieldset>
+						<legend>여행일정</legend>
+						<ul>
+							<li>
+								<label for="golo">가고싶은 나라를 선택하세요.</label>
+								<select name="golo" id="golo">
+									<option value="">선택하세요</option>
+									<option value="미국">미국</option>
+									<option value="영국">영국</option>
+									<option value="중국">중국</option>
+									<option value="일본">일본</option>
+									<option value="호주">호주</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<div class="left">
+									<label for="sdate">출발일</label>
+									<input type="date" id="sdate">
+								</div>
+								<div class="right">
+									<label for="sdate">도착일</label>
+									<input type="date" id="sdate">
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="left">
+									<label for="sgrade">좌석등급</label>
+									<select name="sgrade" id="sgrade">
+										<option value="비지니스">비지니스</option>
+										<option value="이코노미">이코노미</option>
+									</select>
+								</div>
+								<div class="left">
+									<label for="adult">성인</label>
+									<select name="adult" id="adult" value="1">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>	
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									</select>
+								</div>
+								<div class="right">
+									<label for="kid">아이</label>
+									<select name="kid" id="kid" value="1">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>	
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									</select>
+								</div>
+							<input type="button" value="검색하기" class="btn-search">
+							</li>
+						</ul>
+					</fieldset>
+				</form>
 				<ul class="box">
 					<li class="box01">
 						<a href="#">
@@ -94,8 +150,8 @@
 				<ul class="slider01">
 					<li> <!--슬라이더 내용물-->
 						<a href="#">
-						<img src="img/article_hotel.png" alt="">
-						<p>HILLTON HOTEL (PARIS)
+						<img src="img/article_hotel.png" alt="hilton">
+						<p class="aTitle">HILLTON HOTEL (PARIS)
 						<img src="img/star.png" alt=""></p>
 						</a>
 					</li>
@@ -105,20 +161,40 @@
 				</li>
 
 				<li class="box04">
-				<a href="#">
-				<p>내용</p>
-				</a>
+				<ul class="slider02">
+					<li> <!--슬라이더 내용물-->
+						<a href="#">
+						<img src="img/article_disney.png" alt="disney">
+						<p class="aTitle">관광명소 (디즈니랜드)
+						<img src="img/star.png" alt=""></p>
+						</a>
+					</li>
+				</ul>
+				<div class="nextBtn"></div>
+				<div class="prevBtn"></div>
 				</li>
+				
 				<li class="box05">
 				<a href="#">
-				<p>내용</p>
+				<img src="/img/article_weather.png" alt="">
+				<p class="aTitle">20˚c 구름조금</p>
 				</a>
 				</li>
+				
 				<li class="box06">
 				<a href="#">
-				<p>내용</p>
+				<img src="/img/article_facebook.png" alt="">
+				<div class="wrap06">
+				<p>“해외여행은 처음이었는데,<br> 하이미디어여행 덕분에 무사히<br>
+					다녀올 수 있었어어요.”</p>
+					<p><br><span style="color:steelblue;font-weight: ;font-size: 12px;">프랑스 파리 자유여행</span></p>
+					<p class="star">★★★<span style=" color: #BDBDBD;">★★</span></p>
+				</div>
+				<p class="aTitle">
+				facebook 여행후기<br><span style="font-size: 11px;">(임정희 님)</span></p>
 				</a>
 				</li>
+				
 				<li class="box07">
 				<a href="#">
 				<p>내용</p>
@@ -142,6 +218,7 @@
 
 			</ul>
 		</article>
+		<img src="/img/reallyAir.png" alt="plane" class="flyAirplane">
 	</section>
 <footer id="footer">
 	<div class="fWrap">
