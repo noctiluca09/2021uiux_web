@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>animate</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <script src="../js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <style>
+    html,body{height: 100%;}
+    body{
+      display: flex; justify-content: center; align-items: center;
+    }
+    .box {width: 200px;height: 200px;background: skyblue;float: left;margin-left: 10px;}
+  </style>
+</head>
+<body>
+<div class="box wow slideInLeft"></div>
+<div style="height:2000px"></div>
+<div class="container">
+  <ul>
+    <li class="box wow pulse" data-wow-iteration="infinite" data-wow-delay="0">test</li>
+    <li class="box wow pulse" data-wow-iteration="infinite" data-wow-delay="0.3s">test</li>
+    <li class="box wow pulse" data-wow-iteration="infinite" data-wow-delay="0.4s">test</li>
+    <li class="box wow pulse" data-wow-iteration="infinite" data-wow-delay="0.6s">test</li>
+    <li class="box wow pulse" data-wow-iteration="infinite" data-wow-delay="1s">test</li>
+  </ul>
+
+  <ul>
+    <li class="box wow fadeInDown" data-wow-delay="0">test</li>
+    <li class="box wow fadeInDown" data-wow-delay="0.3s">test</li>
+    <li class="box wow fadeInDown" data-wow-delay="0.4s">test</li>
+    <li class="box wow fadeInDown" data-wow-delay="0.6s">test</li>
+    <li class="box wow fadeInDown" data-wow-delay="1s">test</li>
+  </ul>
+</div>
+
+</body>
+</html>

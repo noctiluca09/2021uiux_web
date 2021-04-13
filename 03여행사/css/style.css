@@ -80,7 +80,6 @@ body {
 	border-radius: 50%;
 	cursor: pointer;
 	right: 5px;
-	top: -1px;
 }
 
 #header .hTop .hTopWrap .tel {
@@ -150,9 +149,19 @@ body {
 	margin: 0 auto;
 }
 
-#container .topCont {
-	background: url(../img/titleBalloon.png) no-repeat 100% 100%;
-	background-size: 70%
+#container .topCont {position: relative;
+	background: url(../img/titleBalloon.png) no-repeat 100% 100%; background-position:top right;
+	background-size: 70%; transition: .3s;
+	
+	animation-name: bal01;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes bal01{
+	to {
+		background-position:bottom right;
+	}
 }
 
 #container .subCont .scWrap li {
@@ -170,15 +179,14 @@ body {
 }
 
 #container .topCont .tsWrap form {
-	height: 301px;
-	background: steelblue;
-	position: relative;
+	height: 301px;z-index: 1;
 }
 
 #container .topCont .tsWrap fieldset {
 	float: right;
 	width: 350px;
-	padding: 0 15px;
+	height: 100%;
+	padding: 15px;
 	border: none;
 	background: #fff;
 }
@@ -195,42 +203,55 @@ body {
 	padding: 5px 0;
 }
 
-#container .topCont .tsWrap select {
+#container .topCont .tsWrap select,
+#container .topCont .tsWrap .left input,
+#container .topCont .tsWrap .right input
+{
 	display: block;
-	width: 100%;
+	width: 150px;
 	height: 40px;
 	font-size: 1rem;
 	text-indent: 8px;
 	border-radius: 5px;
 	border: 3px solid #EDEDED;
-}
-#container .topCont .tsWrap .left {margin-right: 10px;}
-
-#container .topCont .tsWrap .left,
-#container .topCont .tsWrap .right {
-	width: 150px;float: left;
-}
-
-#container .topCont .tsWrap .left input,
-#container .topCont .tsWrap .right input {
-	width: 100%;
-	border-radius: 5px;
-	border: 3px solid #EDEDED;
-	height: 40px;
 	line-height: 40px;
-	text-indent: 7px;
-	font-size: 1rem;
-	font-weight: bold;
+	
 }
-#container .topCont .tsWrap .left #adult,
-#container .topCont .tsWrap .right #kid {width: 70px;}
-#container .topCont .btn-search {width: 100%;height: 40px;
-	border-radius: 5px; background: #ff8000;border: none;color: #fff;background-image:url(../img/search.png);
-	background-repeat: no-repeat;
-	background-position:right;
-	background-blend-mode:
-}
+#container .topCont .tsWrap .left {float: left;}
+#container .topCont .tsWrap .right {float: right;} 
 
+#container .topCont .tsWrap #golo {width: 100%;}
+#container .topCont .tsWrap .right #adult,
+#container .topCont .tsWrap .right #kid {width: 70px;}
+#container .topCont .tsWrap .right #adult {margin-right: 10px;}
+#container .topCont .btn-search {
+	width: 100%;height: 40px;
+	margin-top: 15px;
+	border-radius: 5px; background: #ff8000;border: none;color: #fff;background-image:url(../img/search2.png)!important;
+	background-repeat: no-repeat;
+	background-position: 104px 13px;
+	
+}
+#container .topCont .tsWrap .sliderTab {
+	position: absolute;left: 0;top: 0;height: 301px;}
+#container .topCont .tsWrap .sliderTab a:nth-child(2){background:url(../img/block.png)}
+#container .topCont .tsWrap .sliderTab a {background: #0099CB;}
+#container .topCont .tsWrap .sliderTab a {
+	display: block;
+	width: 130px;
+	text-align: center;
+	color: #fff;
+	height: calc(100%/4);
+	font-weight: bold;
+	line-height: 75px;
+}
+#container .topCont .tsWrap .sliderTab a:hover,
+#container .topCont .tsWrap .sliderTab a.active {color: #000;}
+#container .topCont .tsWrap .sliderTab a:hover span,
+#container .topCont .tsWrap .sliderTab a.active span {color: #0066A6;}
+
+#container .topCont .tsWrap .sliderTab a.active,
+#container .topCont .tsWrap .sliderTab a:hover {background:white;}
 /*--------------------------------------------------------*/
 
 #container .topCont .box li:nth-child(1) {
@@ -330,6 +351,7 @@ body {
 	color: #E2A200;
 	font-weight: bold;
 }
+#container .subCont .box07
 
 /*-------------------footer--------------------*/
 #footer {
