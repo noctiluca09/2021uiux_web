@@ -442,7 +442,7 @@ body {
 	to {
 		top: 10px;
 		transform: scale(.4);
-		opacity: .6;}
+		opacity: .6; filter: blur(2px);}
 }
 
 .bal05{
@@ -493,3 +493,16 @@ footer a{
 footer>p{
 	color:#aaaaaa;
 	font-size:0.8em;}
+/*--------------------------------------------------/*/
+.container.company{background-color: lightgray;}
+.container.company .visualImg{background-image:url(../img/subimg01.jpg);}
+.container.company .contents{}
+.container {height: 1500px;}
+.container.tourcity{background-color: skyblue;}
+.container.tourcity .visualImg{background-image: url(../img/util_bg.jpg);}
+footer.company{width: 980px;margin:0 auto;padding-bottom:27px;}
+footer.company ul{padding-bottom:15px;}
+footer.company li{float:left;padding-right:25px;}
+footer.company a{display:block;}
+footer.company>p{color:#6d6d6d;font-size:0.8em;}
+.bold{font-weight:bold;color:black;}

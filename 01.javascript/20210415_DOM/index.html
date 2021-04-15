@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p id="firstP" style="color:blue;background:yellow;" onclick:"this.style.color='teal'">
+    이것은 <span style="color:red">문장입니다.</span>
+  </p>
+  <ul>
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+  </ul>
+  <script>
+    const p = document.getElementById("firstP");
+    const p1 = document.getElementsByTagName("p")[0];
+    const p2 = document.querySelector("#firstP");
+    const li_1st = document.querySelector("ul > li");
+    const li_2st = document.querySelectorAll("ul > li")[1];
+
+    let text = "아이디는" + p.id + "\n, ";
+    text = text + "태그이름은 "+ p.tagName + ", ";
+    text += text + p.innerHTML;
+
+    console.log(text);
+    document.write(text);
+
+    function change(){
+      const span = document.getElementsByTagName("span")[0];
+      const btn = document.getElementsByClassName("btn");
+      span.style.color = "green";
+      span.style.fontSize = "2rem";
+      span.style.display = "block";
+      span.style.width = "200px";
+      span.style.position = "absolute";
+      span.style.left = "300px";
+      span.style.background = "#adff99";
+      btn[0].style.display = "none";
+      btn[1].style.display = "block";
+    };
+
+    function rechange(){
+      const span = document.getElementsByTagName("span")[0];
+      const btn = document.getElementsByClassName("btn");
+      span.style.color = "red";
+      span.style.fontSize = "initial";
+      span.style.display = "initial";
+      span.style.position = "initial";
+      span.style.background = "initial";
+      btn[0].style.display = "block";
+      btn[1].style.display = "none";
+    };
+  </script>
+  <style>
+.btn{
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  background:skyblue;
+  text-align: center;
+  cursor: pointer;
+  border-radius:5px;}
+  span {transition:0.3s;}
+  </style>
+  <div onclick="change()" class="btn">스타일변경</div>
+  <div onclick="rechange()" class="btn" style="display: none;background:orange;">스타일복귀</div>
+
+  <div>
+    Lorem ipsum dolor sit <span class="red">amet</span>, consectetur adipisicing elit. Magni ipsam,
+    at quas excepturi <span class="red">doloribus</span> delectus minima repellendus ipsa dolorum obcaecati,
+     dolore quo minus aliquid veritatis maxime. <span class="red">Corporis</span> id, quae magnam tempora aspernatur.
+      <span class="red">Veritatis</span> voluptatem, maiores.
+  </div>
+
+  <button onclick="red()">빨강</button>
+
+  <script>
+    function red(){
+      const spanRed = document.querySelectorAll(".red");
+      // spanRed[0].style.color = "red";
+      for(let i=0; i <spanRed.length;i++){
+        spanRed[i].style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

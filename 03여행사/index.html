@@ -23,32 +23,35 @@
 				mode:"vertical",
 				touchEnabled:false
 			});
-//
-//			$(".slider02").bxSlider({
-//				pager:false,
-//				controls:false,
-//				auto:true,
-//				touchEnabled:false
-//			});
-//			
-//			$(."nextBtn1").click(function(){
-//				$(".slider02").bxSlider.goToNextSlide();
-//			});
-//			$(."prevBtn1").click(function(){
-//				$(".slider02").bxSlider.goToPrevSlide();
-//			});
-//
-//			$(".slider03").bxSlider({
-//				pager:false,
-//				controls:false
-//			});
-//			
-//			$(."nextBtn2").click(function(){
-//				$(".slider03").bxSlider.goToNextSlide();
-//			});
-//			$(."prevBtn2").click(function(){
-//				$(".slider03").bxSlider.goToPrevSlide();
-//			});
+
+			$(".slider02").bxSlider({
+				pager:false,
+				controls:false,
+				auto:true,
+				autoDelay:1,
+				touchEnabled:false
+			});
+			
+			$(".nextBtn1").click(function(){
+				$(".slider02").bxSlider.goToNextSlide();
+			});
+			$(".prevBtn1").click(function(){
+				$(".slider02").bxSlider.goToPrevSlide();
+			});
+
+			$(".slider03").bxSlider({
+				pager:false,
+				controls:false,
+				speed:800,
+				auto:true
+			});
+			
+			$(".nextBtn2").click(function(){
+				$(".slider03").bxSlider.goToNextSlide();
+			});
+			$(".prevBtn2").click(function(){
+				$(".slider03").bxSlider.goToPrevSlide();
+			});
 		});
 	</script>
 </head>
@@ -57,7 +60,7 @@
 	<header id="header" class="clearfix mb20">
 		<div class="hTop clearfix">
 			<div class="hTopWrap">
-				<a href="#"><h1 class="logo">Travel 하이미디어</h1></a>
+				<a href="index.html"><h1 class="logo">Travel 하이미디어</h1></a>
 				<div class="field">
 					<form action="#">
 						<label for="search"><h4>SEARCH</h4></label>
@@ -82,18 +85,19 @@
 		<div class="hNav clearfix">
 			<nav class="hNavWrap">
 				<ul>
-					<li><a href="#">여행도시</a><div class="bar"></div></li>
+					<li><a href="tourcity.html">여행도시</a><div class="bar"></div></li>
 					<li><a href="#">호텔예약</a><div class="bar"></div></li>
 					<li><a href="#">렌트카</a><div class="bar"></div></li>
 					<li><a href="#">여행TIP</a><div class="bar"></div></li>
-					<li><a href="#">회사소개</a><div class="bar"></div></li>
+					<li><a href="company.html">회사소개</a><div class="bar"></div></li>
 					<li><a href="#">커뮤니티</a><div class="bar"></div></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 	<section id="container" class="clearfix"><!--980-->
-		<article class="topCont clearfix mb15"><!--50% 50%-->
+		<article class="topCont clearfix mb15"><!--50% 50%-->5
 			<div class="tsWrap">
 				<ul class="slider01 clearfix">
 					<li><form action="get">
@@ -382,6 +386,7 @@
 				<span><i class="fas fa-shopping-bag"></i>
 				</span> &nbsp; 휴양지</a>
 				</div>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<ul class="box">
 					<li class="box01">
 						<a href="#">
@@ -389,6 +394,7 @@
 							<p>프랑스<span style="color: #69B960; margin-left: 15px; margin-right:15px;">￦1,900,000~ </span>></p>
 						</a>
 					</li>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 					<li class="box02">
 						<a href="#">
 						<img src="img/article_japan.png" alt="" class="aBg">
@@ -401,6 +407,7 @@
 		</article>
 		<article class="subCont clearfix mb15"><!--1/8-->
 			<ul class="scWrap">
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<li class="box03"> <!--내용 구성 블록-->
 				<ul class="slider02 clearfix"><!--슬라이더 내용물-->
 					<li>
@@ -422,11 +429,11 @@
 
 				</ul>
 				<div class="nextBtn1 nextBtn">
-				<img src="/img/article_slider.png" alt="next01"></div>
+				<img src="img/article_slider.png" alt="next01"></div>
 				<div class="prevBtn1 prevBtn">
-				<img src="/img/article_slider.png" alt="prev01"></div>
+				<img src="img/article_slider.png" alt="prev01"></div>
 				</li>
-
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<li class="box04">
 				<ul class="slider03">
 					<li> <!--슬라이더 내용물-->
@@ -436,22 +443,30 @@
 						<img src="img/star.png" alt=""></p>
 						</a>
 					</li>
+					<li> <!--슬라이더 내용물-->
+						<a href="#">
+						<img src="img/article_disney.png" alt="disney" class="aBg">
+						<p class="aTitle">관광명소 (디즈니랜드)
+						<img src="img/star.png" alt=""></p>
+						</a>
+					</li>
 				</ul>
 				<div class="nextBtn2 nextBtn">
-				<img src="/img/article_slider.png" alt="next02"></div>
+				<img src="img/article_slider.png" alt="next02"></div>
 				<div class="prevBtn2 prevBtn">
-				<img src="/img/article_slider.png" alt="prev02"></div>
+				<img src="img/article_slider.png" alt="prev02"></div>
 				</li>
-
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<li class="box05">
 				<a href="#">
-				<img src="/img/article_weather.png" alt="" class="aBg">
+				<img src="img/article_weather.png" alt="" class="aBg">
 				<p class="aTitle">20˚c 구름조금</p>
 				</a>
 				</li>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<li class="box06">
 				<a href="#">
-				<img src="/img/article_facebook.png" alt="" class="aBg">
+				<img src="img/article_facebook.png" alt="" class="aBg">
 				<div class="wrap06">
 				<p>“해외여행은 처음이었는데,<br> 하이미디어여행 덕분에 무사히<br>
 					다녀올 수 있었어어요.”</p>
@@ -462,62 +477,66 @@
 				facebook 여행후기<br><span style="font-size: 11px;">(임정희 님)</span></p>
 				</a>
 				</li>
-
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<li class="box07">
 				<a href="#">
-				<img src="/img/article_travel.png" alt="" class="aBg">
+				<img src="img/article_travel.png" alt="" class="aBg">
 				<span class="txtWrap bTitle">
-				<h4><img src="/img/tabler_scuba-mask.png" alt="">여행정보</h4><br>
+				<h4><img src="img/tabler_scuba-mask.png" alt="">여행정보</h4><br>
 					<p>다양한 나라의 명소와 맛집 등 <br>
 					상세한 정보를 볼 수 있습니다.</p><br>
-					<img src="/img/icon_more.png" alt="" class="iMore"></span>
+					<img src="img/icon_more.png" alt="" class="iMore"></span>
 				</a>
 				</li>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<li class="box08">
 				<a href="#">
-				<img src="/img/article_cuisine.png" alt="" class="aBg">
+				<img src="img/article_cuisine.png" alt="" class="aBg">
 				<span class="txtWrap bTitle">
-				<img src="/img/icon_more.png" alt="" class="iMore">
-				<h4><img src="/img/article_food.png" alt=""> 맛집정보</h4><br>
+				<img src="img/icon_more.png" alt="" class="iMore">
+				<h4><img src="img/article_food.png" alt=""> 맛집정보</h4><br>
 					<p>다양한 나라의 명소와 맛집 등 <br>
 					상세한 정보를 볼 수 있습니다.</p><br>
 					</span>
 				</a>
 				</li>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<li class="box09">
 				<a href="#">
-				<img src="/img/article_innhotel.png" alt="" class="aBg">
+				<img src="img/article_innhotel.png" alt="" class="aBg">
 				<span class="txtWrap bTitle">
-				<img src="/img/icon_more.png" alt="" class="iMore">
-				<h4><img src="/img/article_inn.png" alt=""> 숙박정보</h4><br>
+				<img src="img/icon_more.png" alt="" class="iMore">
+				<h4><img src="img/article_inn.png" alt=""> 숙박정보</h4><br>
 					<p>다양한 나라의 명소와 맛집 등 <br>
 					상세한 정보를 볼 수 있습니다.</p><br>
 					</span>
 				</a>
 				</li>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 				<li class="box10">
 				<a href="#">
-				<img src="/img/article_best1.png" alt="" class="aBg">
+				<img src="img/article_best1.png" alt="" class="aBg">
 				<span class="txtWrap bTitle">
-				<h4><img src="/img/article_best.png" alt=""> 여행자후기</h4><br>
+				<h4><img src="img/article_best.png" alt=""> 여행자후기</h4><br>
 					<p>다양한 나라의 명소와 맛집 등 <br>
 					상세한 정보를 볼 수 있습니다.</p><br>
-					<img src="/img/icon_more.png" alt="" class="iMore"></span>
+					<img src="img/icon_more.png" alt="" class="iMore"></span>
 				</a>
 				</li>
 			</ul>
 		</article>
 	</section>
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 	<section id="animation">
-		<img src="/img/reallyAir.png"
+		<img src="img/reallyAir.png"
 		alt="plane" class="flyAirplane">
-		<img src="/img/titleBalloon.png"
+		<img src="img/titleBalloon.png"
 		alt="bal01" class="bal01">
-		<img src="/img/content1.png" alt="bal02" class="bal02">
-		<img src="/img/content2.png" alt="bal03" class="bal03">
-		<img src="/img/content5.png" alt="bal04" class="bal04">
-		<img src="/img/content6.png" alt="bal05" class="bal05">
-		<img src="/img/content1.png" alt="bal06" class="bal06">
+		<img src="img/content1.png" alt="bal02" class="bal02">
+		<img src="img/content2.png" alt="bal03" class="bal03">
+		<img src="img/content5.png" alt="bal04" class="bal04">
+		<img src="img/content6.png" alt="bal05" class="bal05">
+		<img src="img/content1.png" alt="bal06" class="bal06">
 	</section>
 <footer>
 	<ul class="clearfix">
