@@ -479,7 +479,7 @@ body {
 /*-------------------footer--------------------*/
 footer{
 	width: 980px;margin:0 auto;
-	padding-bottom:47px;}
+	padding-bottom:47px;margin-top: 10px;}
 footer ul{padding-bottom:15px;}
 footer ul li{
 	float:left;
@@ -493,16 +493,22 @@ footer a{
 footer>p{
 	color:#aaaaaa;
 	font-size:0.8em;}
-/*--------------------------------------------------/*/
+/*------------------company,tourcity--------------------------------/*/
+.container {height: 900px;}
+.visualImg{
+			height:300px;padding-top: 50px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size:cover
+		}
+		.container h3{text-align: center;color:white;font-size:48px;}
+		.contents{width: 980px;margin: 0 auto;background:#fff;padding:30px}
+
 .container.company{background-color: lightgray;}
-.container.company .visualImg{background-image:url(../img/subimg01.jpg);}
-.container.company .contents{}
-.container {height: 1500px;}
 .container.tourcity{background-color: skyblue;}
-.container.tourcity .visualImg{background-image: url(../img/util_bg.jpg);}
-footer.company{width: 980px;margin:0 auto;padding-bottom:27px;}
-footer.company ul{padding-bottom:15px;}
-footer.company li{float:left;padding-right:25px;}
-footer.company a{display:block;}
-footer.company>p{color:#6d6d6d;font-size:0.8em;}
-.bold{font-weight:bold;color:black;}
+
+.container.company .visualImg{background-image:url(../img/subimg01.jpg);background-size: cover;}
+.container.tourcity .visualImg{background-image: url(../img/util_bg.jpg);background-size: cover;}
+
+.container.company .contents,
+.container.tourcity .contents {position: absolute;top: 300px;left: 50%;transform: translateX(-50%)}
