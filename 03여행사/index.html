@@ -23,34 +23,34 @@
 				mode:"vertical",
 				touchEnabled:false
 			});
-
-			$(".slider02").bxSlider({
+// --------------------------------------------------------
+		var jslider1 = $(".slider02").bxSlider({
 				pager:false,
 				controls:false,
 				auto:true,
 				autoDelay:1,
 				touchEnabled:false
 			});
-			
+
 			$(".nextBtn1").click(function(){
-				$(".slider02").bxSlider.goToNextSlide();
+				jslider1.goToNextSlide();
 			});
 			$(".prevBtn1").click(function(){
-				$(".slider02").bxSlider.goToPrevSlide();
+				jslider1.goToPrevSlide();
 			});
-
-			$(".slider03").bxSlider({
+// --------------------------------------------------------
+			var jslider2 = $(".slider03").bxSlider({
 				pager:false,
 				controls:false,
 				speed:800,
 				auto:true
 			});
-			
+
 			$(".nextBtn2").click(function(){
-				$(".slider03").bxSlider.goToNextSlide();
+			 jslider2.goToNextSlide();
 			});
 			$(".prevBtn2").click(function(){
-				$(".slider03").bxSlider.goToPrevSlide();
+			 jslider2.goToPrevSlide();
 			});
 		});
 	</script>
@@ -403,7 +403,10 @@
 					</li>
 				</ul>
 			</div>
-				<h1><img src="./img/title.png" alt=""></h1>
+					<h1 class="title">
+						<img src="./img/title.png" alt="title">
+					</h1>
+					<img src="img/titleBalloon.png"alt="bal01" class="bal01">
 		</article>
 		<article class="subCont clearfix mb15"><!--1/8-->
 			<ul class="scWrap">
@@ -428,9 +431,9 @@
 					</li>
 
 				</ul>
-				<div class="nextBtn1 nextBtn">
+				<div class="nextBtn1">
 				<img src="img/article_slider.png" alt="next01"></div>
-				<div class="prevBtn1 prevBtn">
+				<div class="prevBtn1">
 				<img src="img/article_slider.png" alt="prev01"></div>
 				</li>
 <!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
@@ -451,9 +454,9 @@
 						</a>
 					</li>
 				</ul>
-				<div class="nextBtn2 nextBtn">
+				<div class="nextBtn2">
 				<img src="img/article_slider.png" alt="next02"></div>
-				<div class="prevBtn2 prevBtn">
+				<div class="prevBtn2">
 				<img src="img/article_slider.png" alt="prev02"></div>
 				</li>
 <!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
@@ -528,10 +531,7 @@
 	</section>
 <!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
 	<section id="animation">
-		<img src="img/reallyAir.png"
-		alt="plane" class="flyAirplane">
-		<img src="img/titleBalloon.png"
-		alt="bal01" class="bal01">
+		<img src="img/reallyAir.png"alt="plane" class="flyAirplane">
 		<img src="img/content1.png" alt="bal02" class="bal02">
 		<img src="img/content2.png" alt="bal03" class="bal03">
 		<img src="img/content5.png" alt="bal04" class="bal04">

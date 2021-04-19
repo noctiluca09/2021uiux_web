@@ -152,6 +152,7 @@ body {
 	float: left;
 	width: 482px;
 	position: relative;
+	 z-index: 10;
 }
 #container .topCont .tsWrap form {height: 301px;}
 #container .topCont .tsWrap fieldset {
@@ -179,11 +180,11 @@ body {
 	border-radius: 5px;
 	border: 3px solid #EDEDED;
 	line-height: 40px;
-	
+
 }
 
 #container .topCont .tsWrap .left {float: left;}
-#container .topCont .tsWrap .right {float: right;} 
+#container .topCont .tsWrap .right {float: right;}
 
 #container .topCont .tsWrap #golo {width: 100%;}
 #container .topCont .tsWrap #sdate {font-weight: bold;}
@@ -201,10 +202,11 @@ body {
 	background-image:url(../img/search2.png)!important;
 	background-repeat: no-repeat;
 	background-position: 104px 13px;
-	
+
 }
 /*-----------------메뉴 슬라이더 컨트롤버튼--------------*/
 #container .topCont .tsWrap .sliderTab {
+
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -252,9 +254,27 @@ body {
 	bottom: 0;
 }
 
-#container .topCont h1 {
+#container .topCont h1{
+	position: relative;
+	z-index: 10;
 	float: left;
 	margin-left: 40px;
+	background-image: url(../img/title.png) no-repeat;
+}
+#container .topCont .bal01{
+	z-index: 1;
+	position: absolute;
+	right: 0px;
+	top: 100px;
+	animation-name: bal01;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out
+}
+@keyframes bal01 {
+	to {top: 160px;};
 }
 #container .topCont li {overflow: hidden;}
 #container .topCont li .aBg {transition: .3s;}
@@ -265,10 +285,11 @@ body {
 
 /*-------------------subCont 공통--------------------*/
 #container .subCont .scWrap li {
+	z-index: 10;
 	background: rgb(2, 7, 21);
 	float: left;
 	margin-right: 15px;
-	
+
 	position: relative;overflow: hidden;background: #fff
 }
 
@@ -348,15 +369,18 @@ body {
 #container .subCont .bTitle .iMore {transition: .2s;}
 /*-------------box Slider 공통----------------*/
 .bx-wrapper .bx-pager {bottom: 30px}
-.nextBtn,.prevBtn{
+
+.nextBtn1,.nextBtn2,.prevBtn1,.prevBtn2{
 		position: absolute;
 		top:50%;
 		transform: translateY(-50%);
 		cursor: pointer;
 	}
-.nextBtn img{transform:scaleX(-1)}
-.nextBtn{right: 0;}
-.prevBtn {left: 0;}
+.nextBtn1 img,
+.nextBtn2 img{transform:scaleX(-1)}
+
+.nextBtn1,.nextBtn2 {right: 0;}
+.prevBtn1,.prevBtn2 {left: 0;}
 
 /*-------------animation----------------*/
 #animation img {position: absolute;}
@@ -378,20 +402,7 @@ body {
 	100% {bottom:100%; left:100%;}
 }
 
-.bal01 {
-	z-index: 3;
-	right: 300px;
-	top: 290px;
-	animation-name: bal01;
-	animation-duration: 8s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-fill-mode: both;
-	animation-timing-function: ease-in-out
-}
-@keyframes bal01 {
-	to {top: 210px;};
-}
+
 
 .bal02 {
 	z-index: 4;
@@ -408,7 +419,7 @@ body {
 @keyframes bal02 {	to {bottom: 80px;};}
 
 .bal03{
-	z-index: 7;
+	z-index: 8;
 	top: 550px;
 	right: 40px;
 	transform: rotate(5deg)scale(.7);
@@ -438,7 +449,7 @@ body {
 	animation-fill-mode: both;
 	transform: scale(.5)
 }
-@keyframes bal04 {	
+@keyframes bal04 {
 	to {
 		top: 10px;
 		transform: scale(.4);
@@ -457,10 +468,10 @@ body {
 	animation-direction: alternate;
 	animation-fill-mode: both;
 }
-@keyframes bal05 {	
+@keyframes bal05 {
 	50% {transform: rotate(15deg) scale(.7);}
 	to {bottom: 35%;}}
-	
+
 .bal06{
 	z-index: 1;
 	top: 350px;
