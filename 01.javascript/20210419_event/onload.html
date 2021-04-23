@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <script>
+  window.onload = function(){
+    alert("hi_3");
+    dLoad();
+  }
+  function dLoad(){
+    alert("hi_4");
+  }
+  </script> -->
+  <script>
+    function cImg(){
+      // alert("hi");
+      const sel = document.querySelector("#sel");
+      const img = document.querySelector("#myImg");
+      const imgW = document.querySelector("#imgW");
+
+      
+
+      let index = sel.selectedIndex;
+      console.log(index);
+      img.src = sel.options[index].value;
+      console.log(img.width+"px")
+
+      imgW.innerHTML = img.width;
+    }
+  </script>
+</head>
+<body>
+  <!-- <script>
+  window.onload = function(){
+    alert("hi_2");
+  }
+  </script> -->
+
+  <form>
+    <select id="sel" onchange="cImg()">
+      <option value="../../images/apple.png">사과</option>
+      <option value="../../images/banana.png">바나나</option>
+      <option value="../../images/lime.jpg">라임</option>
+    </select>
+  </form>
+  <p>
+    <img src="../../images/apple.png" alt="사과" id="myImg">
+  </p>
+
+</body>
+</html>

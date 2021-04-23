@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`device-width`, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>menu</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <script src="../js/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <style>
+    * {list-style: none;}
+    .container { width: 1200px;margin: 0 auto;
+      border: 1px solid #ddd;
+    }
+
+ .gnb > li {
+    float: left;
+    width: calc(100%/5);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+   .gnb > li:hover{background:#90e9ee}
+  .boxWrap {padding: 10px; border: 1px solid #000;}
+  .gnb li:first-child {
+    background: skyblue;
+  }
+  </style>
+  <script>
+    $(document).ready(function(){
+    });
+  </script>
+</head>
+<body>
+  <nav class="container">
+    <ul class="gnb clearfix">
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+      <li>menu5</li>
+    </ul>
+    <div class="boxWrap">
+      <div>1.Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio consequatur ullam voluptatum velit suscipit aliquam vero, enim dicta molestias. Placeat. adipisicing elit. Error, harum!</div>
+      <div>2.Aut vitae obcaecati reiciendis deleniti  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque minima, perferendis deleniti officiis iusto? Voluptatibus voluptas nulla alias quaerat voluptatem. et repudiandae voluptas est sed.</div>
+      <div>3.Officiis alias voluptatibus molestiae quasi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolores totam nulla veniam labore, sapiente, quis culpa aliquid neque ratione. provident temporibus ducimus obcaecati earum!</div>
+      <div>4.Deserunt esse ratione consequuntur reiciendis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eius ullam, officia. Explicabo nemo, doloribus ex esse. Dignissimos, voluptas aperiam!  veniam, nobis voluptas quia natus.</div>
+      <div>5.Delectus ducimus cum error dicta nostrum, hic  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quis nostrum, cum deleniti labore! Unde, maiores minima inventore eos ducimus! tempore mollitia consequuntur?</div>
+    </div>
+  </nav>
+  <script>
+    $(".boxWrap>div").hide().eq(0).show();
+      // $(".gnb>li").eq(0).css("background","skyblue")
+      $(".gnb>li").click(function(){
+
+      $(".gnb>li").css("background","white");
+      $(this).css("background","skyblue");
+
+      console.log($(this).index());
+
+      $(".boxWrap>div").hide().eq($(this).index()).show();
+    })
+  </script>
+</body>
+</html>
