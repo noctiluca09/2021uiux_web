@@ -5,8 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+  .btn {background: skyblue; width: 300px; text-align: center; line-height: 40px; margin-top: 10px;
+  cursor: pointer;border-radius:10px;}
+  </style>
 </head>
 <body>
-  <button onclick="window.open('http://www.naver.com')">네이버</button>
+  <button onclick="window.open('http://www.naver.com','naver','width=500,height=500')">네이버</button>
+  <div class="btn" onclick="winOpen()">다음창 열기</div>
+  <div class="btn" onclick="closeWin()">다음창 닫기</div>
+  <div class="btn" onclick="uwinOpen()">유튜브영상 보기</div>
+  <script>
+    let myWin;
+    function winOpen(){
+    myWin = window.open("http://www.daum.net","daum","width=500,height=500")
+    }
+    function closeWin(){
+      myWin.close();
+    }
+    function uwinOpen(){
+      window.open("youtube.html","youtube","width=500,height=400")
+    }
+  </script>
 </body>
 </html>

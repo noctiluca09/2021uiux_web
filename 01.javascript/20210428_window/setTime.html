@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .btn {background: skyblue; width: 300px; text-align: center; line-height: 40px; margin-top: 10px;
+     cursor: pointer;border-radius:10px;}
+  </style>
+</head>
+<body>
+  <button class="btn" onclick="clearT()">stop</button>
+  <script>
+    function myAlert(time){
+      alert(time + "초 지났습니다.");
+    }
+    let timeId = setTimeout("myAlert(3)",3000);
+
+    function clearT(){
+      clearTimeout(timeId);
+    }
+
+    document.getElementsByClassName("btn")[0].onclick = clearT;
+    document.getElementsByClassName("btn")[0].onclick = function(){};
+  </script>
+</body>
+</html>
