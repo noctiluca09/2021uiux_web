@@ -32,11 +32,10 @@ $(document).ready(function(){
 //4stㅡㅡㅡㅡㅡㅡㅡㅡ hash 구문ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 $(".menu>a").click(function(){
   let target = $(this.hash);
-  console.log(target);
   const st = target.offset().top;
   $("html,body").animate({scrollTop:st})
+  // console.log(target);
   });
-});
 
 
 
