@@ -6,6 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <title>homepage</title>
+  <script>
+  let num = location.href.indexOf("=") + 1; //번호찾기
+  let string = location.href.substring(num); //문자열자르기
+  console.log(string);
+
+  if(location.href.indexOf("=") > 0 ){
+    view(string);
+  }else{
+    view(0)
+  }
+
+  function view(menu){
+    $(".listWrap li").removeClass("active").eq(menu).addClass("active");
+    $(".conWrap > div").hide().eq(menu).show();
+  }
+  $(".listWrap li").click(function(){
+    var menu = $(this).index();
+    view(menu);
+  });
+  </script>
 </head>
 <body>
   <header id="header">
