@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  html,body {height: 100%;}
+  .container {
+    display: flex;
+    background: #ff0;
+    height: 100%;
+  }
+  .container div {flex-basis:calc(100%/3)}
+  .container div:nth-child(1){background: skyblue;}
+  .container div:nth-child(2){background: orange;}
+  .container div:nth-child(3){background: aqua;}
+
+@media screen and (max-width:700px){
+  .container{flex-direction:column}
+}
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Lorem ipsum dolor sit amet.</div>
+    <div class="item">Lorem ipsum dolor.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+  </div>
+</body>
+</html>
