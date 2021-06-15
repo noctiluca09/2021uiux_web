@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css">
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fullpage").fullpage({
+                menu:".topMenu",
+                anchors:['m1st','m2st','m3st','m4st'],
+                navigation:true,
+                navigationTooltips: ['home', 'product', 'community', 'board'],
+		        showActiveTooltip: true,
+                responsiveWidth: 1000,
+            })
+        })
+    </script>
+    <style>
+        .section{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section.page1{background-image: url(images/bg1.jpg);}
+        .section.page2{background-image: url(images/bg2.jpg);}
+        .section.page3{background-image: url(images/bg3.jpg);}
+        .section.page4{background-image: url(images/bg4.jpg);}
+        #navTop{
+            position: fixed;z-index:1;background: #fff;
+            width: 100%;
+        }
+        .navbar li{transition:0.3s;border-bottom: 5px solid transparent;}
+        .navbar li.active{border-bottom: 5px solid #000;}
+        #fp-nav.right{right:10px;}
+        .fp-tooltip.right{right:20px}
+
+        @media screen and (max-width:1000px){
+            .navbar li.active{border-bottom: 5px solid transparent;}
+        }
+    </style>
+</head>
+<body>
+    <!-- <nav id="navTop">
+        <ul class="topMenu mb-0">
+            <li data-menuanchor="m1st"><a href="#m1st">menu1</a></li>
+            <li data-menuanchor="m2st"><a href="#m2st">menu2</a></li>
+            <li data-menuanchor="m3st"><a href="#m3st">menu3</a></li>
+            <li data-menuanchor="m4st"><a href="#m4st">menu4</a></li>
+        </ul>
+    </nav> -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-md-0">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav topMenu ml-auto">
+            <li class="nav-item"  data-menuanchor="m1st">
+              <a class="nav-link" href="#m1st">Home </a>
+            </li>
+            <li class="nav-item" data-menuanchor="m2st">
+              <a class="nav-link" href="#m2st">product</a>
+            </li>
+            <li class="nav-item" data-menuanchor="m3st">
+              <a class="nav-link" href="#m3st">community</a>
+            </li>
+            <li class="nav-item" data-menuanchor="m4st">
+                <a class="nav-link" href="#m4st">board</a>
+              </li>
+
+          </ul>
+        </div>
+      </nav>
+    <div id="fullpage">
+        <div class="section page1" data-anchor="m1st">
+            <div class="container bg-info">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 text-center text-md-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, architecto.</div>
+                </div>
+            </div>
+        </div>
+        <div class="section page2" data-anchor="m2st">2</div>
+        <div class="section page3" data-anchor="m3st">3</div>
+        <div class="section page4" data-anchor="m4st">
+            <div class="container bg-info">
+                <div class="slide" data-anchor="slide1"> Slide 1 </div>
+                <div class="slide" data-anchor="slide2"> Slide 2 </div>
+                <div class="slide" data-anchor="slide3"> Slide 3 </div>
+                <div class="slide" data-anchor="slide4"> Slide 4 </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
